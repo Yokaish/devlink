@@ -33,7 +33,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-
+    height: 100vh;
 }
 
 #profile span {
@@ -49,7 +49,7 @@ body {
     max-width: 588px;
     display: block;
     margin: auto;
-    margin-top: 3.5rem;
+    padding-top: 3.5rem;
 }
 
 #profile {
@@ -166,4 +166,18 @@ footer {
 
 footer span {
     font-size: 20px;   
+}
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+
+    body {
+        background-image: var(--bg-url);
+    }
 }
